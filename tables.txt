@@ -1,0 +1,247 @@
+#admin
+
+CREATE TABLE ADMIN (
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(55) NOT NULL,
+email VARCHAR(255) NOT NULL UNIQUE,
+password VARCHAR(50) NOT NULL,
+created_on TIMESTAMP
+);
+
+#crop
+CREATE TABLE crop_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL
+);
+
+CREATE TABLE crop_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL
+);
+
+#district
+CREATE TABLE district_en(
+districtname VARCHAR(100) NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE district_te(
+districtname VARCHAR(100) NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#market prices
+CREATE TABLE marketprice_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+cropname VARCHAR(255) NOT NULL,
+cropprice FLOAT NOT NULL,
+district VARCHAR(100) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE marketprice_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+cropname VARCHAR(255) NOT NULL,
+cropprice FLOAT NOT NULL,
+district VARCHAR(100) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#seeds
+CREATE TABLE seeds_en(
+seedid INTEGER PRIMARY KEY AUTO_INCREMENT,
+cropname_en VARCHAR(255) NOT NULL,
+seedname VARCHAR(255) NOT NULL,
+seedprice FLOAT NOT NULL,
+file VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE seeds_te(
+seedid INTEGER PRIMARY KEY AUTO_INCREMENT,
+cropname_te VARCHAR(255) NOT NULL,
+seedname VARCHAR(255) NOT NULL,
+seedprice FLOAT NOT NULL,
+file VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#pesticides
+CREATE TABLE pesticides_en(
+pesticideid INTEGER PRIMARY KEY AUTO_INCREMENT,
+pesticidename VARCHAR(255) NOT NULL,
+pesticidetype VARCHAR(255) NOT NULL,
+pesticideprice FLOAT NOT NULL,
+file VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE pesticides_te(
+pesticideid INTEGER PRIMARY KEY AUTO_INCREMENT,
+pesticidename VARCHAR(255) NOT NULL,
+pesticidetype VARCHAR(255) NOT NULL,
+pesticideprice FLOAT NOT NULL,
+file VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#fertilizer
+CREATE TABLE fertilizer_en(
+fertilizerid INTEGER PRIMARY KEY AUTO_INCREMENT,
+fertilizername VARCHAR(255) NOT NULL,
+fertilizertype VARCHAR(255) NOT NULL,
+fertilizerprice FLOAT NOT NULL,
+file VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE fertilizer_te(
+fertilizerid INTEGER PRIMARY KEY AUTO_INCREMENT,
+fertilizername VARCHAR(255) NOT NULL,
+fertilizertype VARCHAR(255) NOT NULL,
+fertilizerprice FLOAT NOT NULL,
+file VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#soil fertility
+CREATE TABLE soilfertility_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+district VARCHAR(100) NOT NULL,
+soiltype VARCHAR(255) NOT NULL,
+fertilepercentage FLOAT NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE soilfertility_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+district VARCHAR(100) NOT NULL,
+soiltype VARCHAR(255) NOT NULL,
+fertilepercentage FLOAT NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#areas
+CREATE TABLE areas_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+district VARCHAR(100) NOT NULL,
+irrigated FLOAT NOT NULL,
+unirrigated FLOAT NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE areas_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+district VARCHAR(100) NOT NULL,
+irrigated FLOAT NOT NULL,
+unirrigated FLOAT NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#cropweather
+CREATE TABLE cropweather_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+district VARCHAR(100) NOT NULL,
+rainfall FLOAT NOT NULL,
+temperature VARCHAR(20) NOT NULL,
+humidity VARCHAR(20) NOT NULL,
+wind VARCHAR(20) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE cropweather_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+district VARCHAR(100) NOT NULL,
+rainfall FLOAT NOT NULL,
+temperature VARCHAR(20) NOT NULL,
+humidity VARCHAR(20) NOT NULL,
+wind VARCHAR(20) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#scheme
+CREATE TABLE scheme_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+scehemename VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE scheme_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+scehemename VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#funds
+CREATE TABLE fund_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+fundname VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE fund_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+fundname VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#loan
+CREATE TABLE loan_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+loanname VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE loan_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+loanname VARCHAR(255) NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#equipment
+CREATE TABLE equipment_en(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+price FLOAT NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+CREATE TABLE equipment_te(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+price FLOAT NOT NULL,
+comments TEXT NOT NULL,
+created_on TIMESTAMP NOT NULL
+);
+
+#query
+CREATE TABLE query(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+title VARCHAR(255) NOT NULL,
+source VARCHAR(255) NOT NULL,
+destination VARCHAR(255),
+created_on TIMESTAMP NOT NULL
+);
