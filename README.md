@@ -1,2 +1,2 @@
 --- Farmers_Welfare_System ---
-php
+php, html, css, js, mysql
