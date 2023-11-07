@@ -1,6 +1,6 @@
 <?php
 session_start();
-// Set Language variable
+// Set Language variable.
 if(isset($_REQUEST['lang']) && !empty($_REQUEST['lang'])){
    $_SESSION['lang'] = $_REQUEST['lang'];
 
@@ -8,7 +8,7 @@ if(isset($_REQUEST['lang']) && !empty($_REQUEST['lang'])){
     echo "<script type='text/javascript'> window.location.reload(); </script>";
    }
 }
-// Include Language file
+// Include Language file.
 if(isset($_SESSION['lang'])){
     include "lang/".$_SESSION['lang'].".php";
 } else{
@@ -59,7 +59,7 @@ function changeLang(){
 						<h1><a class="navbar-brand" href="index.html"><span><?= _TITLE_KEY ?></span><?= _TITLE_VALUE ?></a></h1>
 					</div>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
+				<!-- Collect the nav links, forms, and other content for toggling. -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav>
 						<ul class="nav navbar-nav link-effect-5" id="link-effect-5">
