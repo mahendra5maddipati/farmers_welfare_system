@@ -124,6 +124,7 @@ function changeLang(){
 	</div>
 <!-- //services -->
 
+
 <?php include '../components/footer.php'; ?>
 <!-- start-smooth-scrolling -->
 <script type="text/javascript" src="../js/move-top.js"></script>
