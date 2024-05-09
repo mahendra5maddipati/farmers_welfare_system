@@ -113,7 +113,7 @@ function changeLang(){
 			<!-- //flexSlider -->
 		</div>
 	</div>
-<!-- //banner -->
+<!-- //banner section -->
 
 <!-- banner-bottom -->
 	<div id="about" class="banner-bottom">
