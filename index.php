@@ -44,7 +44,7 @@ function changeLang(){
 </head>
 
 <body>
-<!-- banner -->
+<!-- banner section -->
 	<div class="banner">
 		<div class="container">
 			<nav class="navbar navbar-default">
