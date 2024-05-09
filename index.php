@@ -163,7 +163,7 @@ function changeLang(){
 			</div>
 		</div>
 	</div>
-<!-- //about -->
+<!-- //about section -->
 <!-- services-bottom -->
 	<div class="services-bottom">
 		<div class="container">
