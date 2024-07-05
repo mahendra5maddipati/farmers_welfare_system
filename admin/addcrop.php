@@ -13,7 +13,7 @@ require_once './core/authenticator.php';
     <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
     <title>Admin Welfare System Admin - Dashboard</title>
 
-    <!-- Font -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 
     <!-- Bootstrap core CSS-->
