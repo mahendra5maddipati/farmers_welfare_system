@@ -22,7 +22,7 @@ require_once './core/authenticator.php';
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-    <!-- Page level plugin CSS-->
+    <!-- Page level plugin CSS -->
     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <!-- Custom styles for this template-->
