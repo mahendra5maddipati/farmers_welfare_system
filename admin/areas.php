@@ -19,7 +19,7 @@ $con = $db->getConnection();
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 
-    <!-- Bootstrap core CSS-->
+    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
